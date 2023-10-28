@@ -94,7 +94,7 @@ $config['expansion'] = '3';
  *  Default: default
  *
 */
-$config['theme_name'] = 'default';
+$config['theme_name'] = 'frozenthrone';
 
 /**
  *
