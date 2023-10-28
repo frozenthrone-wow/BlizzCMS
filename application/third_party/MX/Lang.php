@@ -71,9 +71,9 @@ class MX_Lang extends CI_Lang
         // Before PHP 7.1.0, list() only worked on numerical arrays and assumes the numerical indices start at 0.
         if (version_compare(phpversion(), '7.1', '<')) {
             // php version isn't high enough
-            list($path, $_langfile) = MX_Modules::find($langfile.'_lang', $_module, 'language/'.$idiom.'/');
+            list($path, $_langfile) = Modules::find($langfile.'_lang', $_module, 'language/'.$idiom.'/');
         } else {
-            [$path, $_langfile] = MX_Modules::find($langfile.'_lang', $_module, 'language/'.$idiom.'/');
+            [$path, $_langfile] = Modules::find($langfile.'_lang', $_module, 'language/'.$idiom.'/');
         }
 
         if ($path === false) {
@@ -81,7 +81,7 @@ class MX_Lang extends CI_Lang
                 return $lang;
             }
         } else {
-            if ($lang = MX_Modules::load_file($_langfile, $path, 'lang')) {
+            if ($lang = Modules::load_file($_langfile, $path, 'lang')) {
                 if ($return) {
                     return $lang;
                 }

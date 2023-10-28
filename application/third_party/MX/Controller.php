@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
-// load the CI class for Modular Extensions
+/** load the CI class for Modular Extensions **/
 require_once __DIR__ .'/Base.php';
 
 /**
@@ -38,7 +38,7 @@ require_once __DIR__ .'/Base.php';
  **/
 class MX_Controller
 {
-    public $autoload = [];
+    public $autoload = array();
 
     /**
      * [__construct description]
@@ -47,15 +47,15 @@ class MX_Controller
      */
     public function __construct()
     {
-        $class = str_replace((string) CI::$APP->config->item('controller_suffix'), '', get_class($this));
+        $class = str_replace(CI::$APP->config->item('controller_suffix') ?? '', '', get_class($this));
         log_message('debug', $class.' MX_Controller Initialized');
-        MX_Modules::$registry[strtolower($class)] = $this;
+        Modules::$registry[strtolower($class)] = $this;
 
-        // copy a loader instance and initialize
+        /* copy a loader instance and initialize */
         $this->load = clone load_class('Loader');
         $this->load->initialize($this);
 
-        // autoload module items
+        /* autoload module items */
         $this->load->_autoloader($this->autoload);
     }
 

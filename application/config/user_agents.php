@@ -151,12 +151,12 @@ $mobiles = array(
 	'wii'			=> 'Nintendo Wii',
 	'open web'		=> 'Open Web',
 	'openweb'		=> 'OpenWeb',
-	'meizu'			=> 'Meizu',
-	'huawei'		=> 'Huawei',
-	'xiaomi'		=> 'Xiaomi',
-	'oppo'			=> 'Oppo',
-	'vivo'			=> 'Vivo',
-	'infinix'		=> 'Infinix',
+	'meizu'                 => 'Meizu',
+	'huawei'                => 'Huawei',
+	'xiaomi'                => 'Xiaomi',
+	'oppo'                  => 'Oppo',
+	'vivo'                  => 'Vivo',
+	'infinix'               => 'Infinix',
 
 	// Operating Systems
 	'android'		=> 'Android',

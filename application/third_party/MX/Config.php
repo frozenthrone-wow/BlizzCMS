@@ -59,9 +59,9 @@ class MX_Config extends CI_Config
         // Before PHP 7.1.0, list() only worked on numerical arrays and assumes the numerical indices start at 0.
         if (version_compare(phpversion(), '7.1', '<')) {
             // php version isn't high enough
-            list($path, $file) = MX_Modules::find($file, $_module, 'config/');
+            list($path, $file) = Modules::find($file, $_module, 'config/');
         } else {
-            [$path, $file] = MX_Modules::find($file, $_module, 'config/');
+            [$path, $file] = Modules::find($file, $_module, 'config/');
         }
 
         if ($path === false) {
@@ -69,8 +69,8 @@ class MX_Config extends CI_Config
             return $this->item($file);
         }
 
-        if ($config = MX_Modules::load_file($file, $path, 'config')) {
-            // reference to the config array
+        if ($config = Modules::load_file($file, $path, 'config')) {
+            /* reference to the config array */
             $current_config =& $this->config;
 
             if ($use_sections === true) {

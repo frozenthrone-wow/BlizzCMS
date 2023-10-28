@@ -83,22 +83,3 @@ defined('EXIT_USER_INPUT')     OR define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
-
-/*
-|--------------------------------------------------------------------------
-| CMS Constants
-|--------------------------------------------------------------------------
-|
-| These constants are used when working with the base functions of the CMS
-|
-*/
-defined('CURRENCY_BOTH') OR define('CURRENCY_BOTH', 'both');
-defined('CURRENCY_DP')   OR define('CURRENCY_DP', 'dp');
-defined('CURRENCY_VP')   OR define('CURRENCY_VP', 'vp');
-defined('ITEM_LINK')     OR define('ITEM_LINK', 'link');
-defined('ITEM_DROPDOWN') OR define('ITEM_DROPDOWN', 'dropdown');
-defined('SLIDE_IMAGE')   OR define('SLIDE_IMAGE', 'image');
-defined('SLIDE_VIDEO')   OR define('SLIDE_VIDEO', 'video');
-defined('SLIDE_IFRAME')  OR define('SLIDE_IFRAME', 'iframe');
-defined('TARGET_SELF')   OR define('TARGET_SELF', '_self');
-defined('TARGET_BLANK')  OR define('TARGET_BLANK', '_blank');

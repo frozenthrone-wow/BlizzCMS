@@ -1,94 +1,64 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>404 Page Not Found</title>
-    <style type="text/css">
-      html {
-        background: #f5f6f8;
-        color: #6f7079;
-        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1;
-      }
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>404 Page Not Found</title>
+<style type="text/css">
 
-      body {
-        margin: 0;
-      }
+::selection { background-color: #E13300; color: white; }
+::-moz-selection { background-color: #E13300; color: white; }
 
-      a {
-        color: #105fff;
-        transition: all ease .15s;
-      }
+body {
+	background-color: #fff;
+	margin: 40px;
+	font: 13px/20px normal Helvetica, Arial, sans-serif;
+	color: #4F5155;
+}
 
-      a:hover {
-        color: #004de8;
-      }
+a {
+	color: #003399;
+	background-color: transparent;
+	font-weight: normal;
+}
 
-      h1 {
-        color: #494a50;
-        font-size: 1.125rem;
-        font-weight: 700;
-        margin: 10px 0;
-        text-transform: uppercase;
-      }
+h1 {
+	color: #444;
+	background-color: transparent;
+	border-bottom: 1px solid #D0D0D0;
+	font-size: 19px;
+	font-weight: normal;
+	margin: 0 0 14px 0;
+	padding: 14px 15px 10px 15px;
+}
 
-      p {
-        margin: 10px 0;
-      }
+code {
+	font-family: Consolas, Monaco, Courier New, Courier, monospace;
+	font-size: 12px;
+	background-color: #f9f9f9;
+	border: 1px solid #D0D0D0;
+	color: #002166;
+	display: block;
+	margin: 14px 0 14px 0;
+	padding: 12px 10px 12px 10px;
+}
 
-      code {
-        display: block;
-        font: 0.875rem/1.5 Consolas,monaco,monospace;
-        background-color: #f5f6f8;
-        border: 1px solid #e9ecf0;
-        color: #5c5d65;
-        margin: 10px 0;
-        padding: 10px;
-      }
+#container {
+	margin: 10px;
+	border: 1px solid #D0D0D0;
+	box-shadow: 0 0 8px #D0D0D0;
+}
 
-      section {
-        position: relative;
-        margin-top: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
-      }
-
-      .card {
-        position: relative;
-        background: #fff;
-        border-radius: 4px;
-        box-sizing: border-box;
-        box-shadow: 0 15px 25px rgba(0, 0, 0, .025);
-      }
-
-      .card-head {
-        border-bottom: 1px solid rgba(0, 0, 0, .05);
-        padding: 15px;
-      }
-
-      .card-head h1 {
-        margin: 0;
-      }
-
-      .card-body {
-        padding: 15px;
-      }
-    </style>
-  </head>
-  <body>
-    <section>
-      <div class="card">
-        <div class="card-head">
-          <h1><?php echo $heading; ?></h1>
-        </div>
-        <div class="card-body">
-          <?php echo $message; ?>
-        </div>
-      </div>
-    </section>
-  </body>
+p {
+	margin: 12px 15px 12px 15px;
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		<h1><?php echo $heading; ?></h1>
+		<?php echo $message; ?>
+	</div>
+</body>
 </html>

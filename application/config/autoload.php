@@ -51,14 +51,14 @@ $autoload['packages'] = [];
 |
 | Prototype:
 |
-|	$autoload['libraries'] = array('database', 'email', 'session');
+|   $autoload['libraries'] = array('database', 'email', 'session');
 |
 | You can also supply an alternative library name to be assigned
 | in the controller:
 |
-|	$autoload['libraries'] = array('user_agent' => 'ua');
+|   $autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = ['database', 'session', 'form_validation', 'parser', 'pagination', 'multilanguage', 'template', 'encryption', 'cart', 'user_agent'];
+$autoload['libraries'] = ['database', 'session', 'form_validation', 'parser', 'template', 'cart'];
 
 /*
 | -------------------------------------------------------------------
@@ -71,12 +71,12 @@ $autoload['libraries'] = ['database', 'session', 'form_validation', 'parser', 'p
 |
 | Prototype:
 |
-|	$autoload['drivers'] = array('cache');
+|   $autoload['drivers'] = array('cache');
 |
 | You can also supply an alternative property name to be assigned in
 | the controller:
 |
-|	$autoload['drivers'] = array('cache' => 'cch');
+|   $autoload['drivers'] = array('cache' => 'cch');
 |
 */
 $autoload['drivers'] = ['cache'];
@@ -87,9 +87,9 @@ $autoload['drivers'] = ['cache'];
 | -------------------------------------------------------------------
 | Prototype:
 |
-|	$autoload['helper'] = array('url', 'file');
+|   $autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = ['cookie', 'date', 'directory', 'file', 'form', 'html', 'language', 'number', 'string', 'security', 'text', 'url', 'db', 'module', 'exception', 'base', 'extra', 'wow'];
+$autoload['helper'] = ['url', 'file', 'text', 'form', 'html', 'language', 'recaptcha'];
 
 /*
 | -------------------------------------------------------------------
@@ -97,13 +97,13 @@ $autoload['helper'] = ['cookie', 'date', 'directory', 'file', 'form', 'html', 'l
 | -------------------------------------------------------------------
 | Prototype:
 |
-|	$autoload['config'] = array('config1', 'config2');
+|   $autoload['config'] = array('config1', 'config2');
 |
 | NOTE: This item is intended for use ONLY if you have created custom
 | config files.  Otherwise, leave it blank.
 |
 */
-$autoload['config'] = ['install', 'resources', 'version'];
+$autoload['config'] = ['blizzcms', 'seo'];
 
 /*
 | -------------------------------------------------------------------
@@ -111,13 +111,13 @@ $autoload['config'] = ['install', 'resources', 'version'];
 | -------------------------------------------------------------------
 | Prototype:
 |
-|	$autoload['language'] = array('lang1', 'lang2');
+|   $autoload['language'] = array('lang1', 'lang2');
 |
 | NOTE: Do not include the "_lang" part of your file.  For example
 | "codeigniter_lang.php" would be referenced as array('codeigniter');
 |
 */
-$autoload['language'] = [];
+$autoload['language'] = ['general', 'notification', 'admin', 'update'];
 
 /*
 | -------------------------------------------------------------------
@@ -125,32 +125,17 @@ $autoload['language'] = [];
 | -------------------------------------------------------------------
 | Prototype:
 |
-|	$autoload['model'] = array('first_model', 'second_model');
+|   $autoload['model'] = array('first_model', 'second_model');
 |
 | You can also supply an alternative model name to be assigned
 | in the controller:
 |
-|	$autoload['model'] = array('first_model' => 'first');
+|   $autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = [
-    'setting_model',
-    'auth_model',
-    'ban_model',
-    'log_model',
-    'menu_model',
-    'menu_item_model',
-    'module_model',
-    'news_model',
-    'news_comment_model',
-    'page_model',
-    'pageviews_model',
-    'permission_model',
-    'realm_model',
-    'role_model',
-    'role_permission_model',
-    'server_auth_model',
-    'server_characters_model',
-    'slide_model',
-    'user_model',
-    'user_token_model'
+    'auth_model'    => 'wowauth',
+    'general_model' => 'wowgeneral',
+    'realm_model'   => 'wowrealm',
+    'module_model'  => 'wowmodule',
+    'service_model' => 'service'
 ];

@@ -1,40 +1,44 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
+ *
  * Parser Enabled
  *
  * Should the Parser library be used for the entire page?
  *
- * Can be overridden with $this->template->enable_parser(true/false);
+ * Can be overridden with $this->template->enable_parser(TRUE/FALSE);
  *
- * Default: true
+ * Default: TRUE
  *
 */
-$config['parser_enabled'] = false;
+$config['parser_enabled'] = FALSE;
 
 /**
+ *
  * Parser Enabled for Body
  *
  * If the parser is enabled, do you want it to parse the body or not?
  *
- * Can be overridden with $this->template->enable_parser(true/false);
+ * Can be overridden with $this->template->enable_parser(TRUE/FALSE);
  *
- * Default: false
+ * Default: FALSE
  *
 */
-$config['parser_body_enabled'] = false;
+$config['parser_body_enabled'] = FALSE;
 
 /**
+ *
  * Title Separator
  *
  * What string should be used to separate title segments sent via $this->template->title('Foo', 'Bar');
  *
- * Default: ' — '
+ * Default: ' | '
  *
 */
-$config['title_separator'] = ' — ';
+$config['title_separator'] = ' | ';
 
 /**
+ *
  * Layout
  *
  * Which layout file should be used? When combined with theme it will be a layout file in that theme
@@ -47,6 +51,7 @@ $config['title_separator'] = ' — ';
 $config['layout'] = 'layout';
 
 /**
+ *
  * Theme
  *
  * Which theme to use by default?
@@ -56,16 +61,17 @@ $config['layout'] = 'layout';
  * Default: ''
  *
 */
-$config['theme'] = '';
+$config['theme'] = config_item('theme_name');
 
 /**
+ *
  * Theme Locations
  *
  * Where should we expect to see themes?
  *
- * Default: [APPPATH.'themes/' => '../themes/']
+ * Default: array(APPPATH.'themes/' => '../themes/')
  *
 */
-$config['theme_locations'] = [
-    APPPATH . 'themes/'
-];
+$config['theme_locations'] = array(
+    APPPATH.'themes/'
+);

@@ -1,400 +1,282 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+/**
+* BlizzCMS
+*
+* An Open Source CMS for "World of Warcraft"
+*
+* This content is released under the MIT License (MIT)
+*
+* Copyright (c) 2017 - 2023, WoW-CMS
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+* THE SOFTWARE.
+*
+* @author  WoW-CMS
+* @copyright  Copyright (c) 2017 - 2023, WoW-CMS.
+* @license https://opensource.org/licenses/MIT MIT License
+* @link    https://wow-cms.com
+* @since   Version 1.0.1
+* @filesource
+*/
 
-$lang['home'] = 'Home';
-$lang['news'] = 'News';
-$lang['menu'] = 'Menu';
-$lang['forgot_password'] = 'Forgot Password';
-$lang['reset_password'] = 'Reset Password';
-$lang['user_panel'] = 'User Panel';
-$lang['admin_panel'] = 'Admin Panel';
-$lang['dashboard'] = 'Dashboard';
-$lang['powered_by'] = 'Powered by';
+/*Browser Tab Menu*/
+$lang['tab_news'] = 'News';
+$lang['tab_forum'] = 'Forum';
+$lang['tab_store'] = 'Store';
+$lang['tab_bugtracker'] = 'Bugtracker';
+$lang['tab_changelogs'] = 'Changelogs';
+$lang['tab_pvp_statistics'] = 'PvP Statistics';
+$lang['tab_login'] = 'Login';
+$lang['tab_register'] = 'Register';
+$lang['tab_home'] = 'Home';
+$lang['tab_donate'] = 'Donate';
+$lang['tab_vote'] = 'Vote';
+$lang['tab_cart'] = 'Cart';
+$lang['tab_account'] = 'My Account';
+$lang['tab_reset'] = 'Password Recovery';
+$lang['tab_error'] = 'Error 404';
+$lang['tab_maintenance'] = 'Maintenance';
+$lang['tab_online'] = 'Online Players';
+$lang['tab_download'] = 'Download';
 
-$lang['register'] = 'Register';
-$lang['login'] = 'Login';
-$lang['logout'] = 'Logout';
-$lang['reset'] = 'Reset';
-$lang['forgot_your_password'] = 'Forgot your password?';
-$lang['remember'] = 'Remember me';
-$lang['validate_your_registration'] = 'Validate your registration';
-$lang['dont_have_account'] = "Don't have an account yet? Sign up";
-$lang['already_have_account'] = 'Do you already have an account? Log in';
-$lang['fill_form_password_reset'] = 'Fill out the form to reset your password';
-$lang['account_confirmation'] = 'Account confirmation';
-$lang['here'] = 'Here';
-$lang['submit'] = 'Submit';
-$lang['change'] = 'Change';
-$lang['cancel'] = 'Cancel';
-$lang['send'] = 'Send';
-$lang['read_more'] = 'Read more';
-$lang['delete'] = 'Delete';
-$lang['add'] = 'Add';
-$lang['edit'] = 'Edit';
-$lang['save'] = 'Save';
-$lang['close'] = 'Close';
-$lang['reply'] = 'Reply';
-$lang['continue'] = 'Continue';
-$lang['view_cart'] = 'View Cart';
-$lang['checkout'] = 'Checkout';
-$lang['check'] = 'Check';
-$lang['continue_buying'] = 'Continue buying';
-$lang['install'] = 'Install';
-$lang['uninstall'] = 'Uninstall';
-$lang['reload'] = 'Reload';
-$lang['force'] = 'Force';
-$lang['filter'] = 'Filter';
-$lang['search'] = 'Search';
-$lang['select'] = 'Select';
-$lang['update'] = 'Update';
-$lang['configure'] = 'Configure';
-$lang['restore'] = 'Restore';
-$lang['activate'] = 'Activate';
-$lang['deactivate'] = 'Deactivate';
-$lang['grant'] = 'Grant';
-$lang['back'] = 'Back';
-$lang['view'] = 'View';
-$lang['views'] = 'Views';
-$lang['current'] = 'Current';
-$lang['migrate'] = 'Migrate';
-$lang['username'] = 'Username';
-$lang['email'] = 'Email address';
-$lang['email_or_username'] = 'Email/Username';
-$lang['password'] = 'Password';
-$lang['confirm_password'] = 'Confirm password';
-$lang['confirm_new_password'] = 'Confirm new password';
-$lang['current_password'] = 'Current password';
-$lang['new_password'] = 'New password';
-$lang['new_nickname'] = 'New nickname';
-$lang['new_email'] = 'New email';
-$lang['current_nickname'] = 'Current nickname';
-$lang['current_email'] = 'Current email';
-$lang['avatar'] = 'Avatar';
-$lang['title'] = 'Title';
-$lang['type'] = 'Type';
-$lang['types'] = 'Types';
-$lang['tag'] = 'Tag';
-$lang['tags'] = 'Tags';
-$lang['summary'] = 'Summary';
-$lang['content'] = 'Content';
-$lang['description'] = 'Description';
-$lang['url'] = 'URL';
-$lang['slug'] = 'URL slug';
-$lang['highlight'] = 'Highlight';
-$lang['lock'] = 'Lock';
-$lang['unlock'] = 'Unlock';
-$lang['subject'] = 'Subject';
-$lang['nickname'] = 'Nickname';
-$lang['icon'] = 'Icon';
-$lang['category'] = 'Category';
-$lang['categories'] = 'Categories';
-$lang['name'] = 'Name';
-$lang['item'] = 'Item';
-$lang['items'] = 'Items';
-$lang['reason'] = 'Reason';
-$lang['gm_level'] = 'GM level';
-$lang['parent'] = 'Parent';
-$lang['target'] = 'Target';
-$lang['url_type'] = 'URL Type';
-$lang['path'] = 'Path';
-$lang['hostname'] = 'Hostname';
-$lang['database'] = 'Database';
-$lang['port'] = 'Port';
-$lang['prefix'] = 'Prefix';
-$lang['maximum_capacity'] = 'Maximum capacity';
-$lang['command'] = 'Command';
-$lang['emulator'] = 'Emulator';
-$lang['faction'] = 'Faction';
-$lang['id'] = 'ID';
-$lang['status'] = 'Status';
-$lang['priority'] = 'Priority';
-$lang['severity'] = 'Severity';
-$lang['date'] = 'Date';
-$lang['expires_at'] = 'Expires at';
-$lang['created_at'] = 'Created at';
-$lang['updated_at'] = 'Updated at';
-$lang['start_at'] = 'Start at';
-$lang['end_at'] = 'End at';
-$lang['author'] = 'Author';
-$lang['time'] = 'Time';
-$lang['realm'] = 'Realm';
-$lang['zone'] = 'Zone';
-$lang['character'] = 'Character';
-$lang['price'] = 'Price';
-$lang['quantity'] = 'Quantity';
-$lang['race'] = 'Race';
-$lang['class'] = 'Class';
-$lang['level'] = 'Level';
-$lang['money'] = 'Money';
-$lang['time_played'] = 'Time played';
-$lang['action'] = 'Action';
-$lang['actions'] = 'Actions';
-$lang['event'] = 'Event';
-$lang['module'] = 'Module';
-$lang['hash'] = 'Hash';
-$lang['token'] = 'Token';
-$lang['code'] = 'Code';
-$lang['total'] = 'Total';
-$lang['total_dp'] = 'Total DP';
-$lang['total_vp'] = 'Total VP';
-$lang['guid'] = 'Guid';
-$lang['details'] = 'Details';
-$lang['value'] = 'Value';
-$lang['encryption'] = 'Encryption';
-$lang['protocol'] = 'Protocol';
-$lang['expansion'] = 'Expansion';
-$lang['normal'] = 'Normal';
-$lang['compact'] = 'Compact';
-$lang['default'] = 'Default';
-$lang['link'] = 'Link';
-$lang['dropdown'] = 'Dropdown';
-$lang['image'] = 'Image';
-$lang['video'] = 'Video';
-$lang['iframe'] = 'Iframe';
-$lang['file'] = 'File';
-$lang['ssl'] = 'SSL';
-$lang['tls'] = 'TLS';
-$lang['dp'] = 'DP';
-$lang['vp'] = 'VP';
-$lang['dp_vp'] = 'DP & VP';
-$lang['new_tab'] = 'New tab/window';
-$lang['same_tab'] = 'Same tab/window';
-$lang['no_parent'] = 'No parent';
-$lang['set_default'] = 'Set as default';
-$lang['file_not_loaded'] = 'File not loaded';
-$lang['file_not_found'] = 'File not found';
-$lang['image_not_loaded'] = 'Image not loaded';
-$lang['characters'] = 'Characters';
-$lang['guest'] = 'Guest';
-$lang['user'] = 'User';
-$lang['admin'] = 'Admin';
-$lang['banned_user'] = 'Banned user';
-$lang['bnet_authentication'] = 'Bnet authentication';
-$lang['language'] = 'Language';
-$lang['languages'] = 'Languages';
-$lang['site_name'] = 'Site name';
-$lang['realmlist'] = 'Realmlist';
-$lang['list'] = 'List';
-$lang['builder'] = 'Builder';
-$lang['message'] = 'Message';
-$lang['ip'] = 'IP address';
-$lang['upload'] = 'Upload';
-$lang['version'] = 'Version';
-$lang['versions'] = 'Versions';
-$lang['position'] = 'Position';
-$lang['captcha'] = 'Captcha';
-$lang['size'] = 'Size';
-$lang['max_size'] = 'Maximum size';
-$lang['color'] = 'Color';
-$lang['background'] = 'Background';
-$lang['role'] = 'Role';
-$lang['by'] = 'By';
-$lang['preview'] = 'Preview';
-$lang['frequency'] = 'Frequency';
-$lang['from'] = 'From';
-$lang['to'] = 'To';
-$lang['minutes'] = 'Minutes';
-$lang['hours'] = 'Hours';
-$lang['days'] = 'Days';
-$lang['months'] = 'Months';
-$lang['years'] = 'Years';
-$lang['both'] = 'Both';
-$lang['currency'] = 'Currency';
-$lang['object'] = 'Object';
-$lang['key'] = 'Key';
-$lang['none'] = 'None';
-$lang['period'] = 'Period';
-$lang['permanent'] = 'Permanent';
-$lang['temporary'] = 'Temporary';
-$lang['timespan'] = 'Timespan';
-$lang['endless'] = 'Endless';
-$lang['visible'] = 'Visible';
-$lang['hidden'] = 'Hidden';
-$lang['terms'] = 'Terms';
-$lang['theme'] = 'Theme';
-$lang['themes'] = 'Themes';
+/*Panel Navbar*/
+$lang['navbar_vote_panel'] = 'Vote Panel';
+$lang['navbar_donate_panel'] = 'Donate Panel';
 
+/*Button Lang*/
+$lang['button_register'] = 'Register';
+$lang['button_login'] = 'Log In';
+$lang['button_logout'] = 'Log Out';
+$lang['button_forgot_password'] = 'Forgot your password?';
+$lang['button_user_panel'] = 'User Panel';
+$lang['button_admin_panel'] = 'Admin Panel';
+$lang['button_mod_panel'] = 'Mod Panel';
+$lang['button_change_avatar'] = 'Change Avatar';
+$lang['button_add_personal_info'] = 'Add Personal Information';
+$lang['button_create_report'] = 'Create Report';
+$lang['button_new_topic'] = 'New Topic';
+$lang['button_edit_topic'] = 'Edit Topic';
+$lang['button_save_changes'] = 'Save Changes';
+$lang['button_cancel'] = 'Cancel';
+$lang['button_send'] = 'Send';
+$lang['button_read_more'] = 'Read More';
+$lang['button_add_reply'] = 'Add Reply';
+$lang['button_remove'] = 'Remove';
+$lang['button_create'] = 'Create';
+$lang['button_save'] = 'Save';
+$lang['button_close'] = 'Close';
+$lang['button_reply'] = 'Reply';
+$lang['button_donate'] = 'Donate';
+$lang['button_account_settings'] = 'Account Settings';
+$lang['button_cart'] = 'Add to Cart';
+$lang['button_view_cart'] = 'View Cart';
+$lang['button_checkout'] = 'Checkout';
+$lang['button_buying'] = 'Continue Buying';
+
+/*Alert Lang*/
+$lang['alert_successful_purchase'] = 'Item purchased successfully.';
+$lang['alert_upload_error'] = 'Your image must be in jpg or png format';
+$lang['alert_changelog_not_found'] = 'The server does not have changelogs to inform at this time';
+$lang['alert_points_insufficient'] = 'Insufficient points';
+
+/*Status Lang*/
 $lang['offline'] = 'Offline';
 $lang['online'] = 'Online';
-$lang['unknown'] = 'Unknown';
-$lang['completed'] = 'Completed';
-$lang['canceled'] = 'Canceled';
-$lang['declined'] = 'Declined';
-$lang['pending'] = 'Pending';
-$lang['enable'] = 'Enable';
-$lang['disable'] = 'Disable';
-$lang['error'] = 'Error';
-$lang['warning'] = 'Warning';
-$lang['information'] = 'Information';
-$lang['success'] = 'Success';
-$lang['succeeded'] = 'Succeeded';
-$lang['failed'] = 'Failed';
-$lang['open'] = 'Open';
-$lang['closed'] = 'Closed';
-$lang['active'] = 'Active';
-$lang['inactive'] = 'Inactive';
-$lang['installed'] = 'Installed';
-$lang['not_installed'] = 'Not installed';
 
-$lang['read_and_agree'] = 'I have read and agree with the';
-$lang['terms_service'] = 'Terms of service';
-$lang['privacy_policy'] = 'Privacy policy';
-$lang['and'] = 'and';
-$lang['rights_reserved'] = 'All rights reserved.';
+/*Label Lang*/
+$lang['label_open'] = 'Open';
+$lang['label_closed'] = 'Closed';
 
-$lang['comment'] = 'Comment';
-$lang['comments'] = 'Comments';
-$lang['latest_comments'] = 'Latest Comments';
-$lang['add_comment'] = 'Add comment';
-$lang['edit_comment'] = 'Edit comment';
-$lang['latest_news'] = 'Latest News';
-$lang['realm_status'] = 'Realm Status';
-$lang['social_networks'] = 'Social Networks';
-$lang['published_on'] = 'Published on';
-$lang['written_on'] = 'Written on';
-$lang['registered_on'] = 'Registered on';
-$lang['donation_points'] = 'Donation points';
-$lang['voting_points'] = 'Voting points';
-$lang['facebook'] = 'Facebook';
-$lang['discord'] = 'Discord';
-$lang['reddit'] = 'Reddit';
-$lang['twitch'] = 'Twitch';
-$lang['x_twitter'] = 'X (Twitter)';
-$lang['youtube'] = 'YouTube';
-$lang['cart_have_products'] = 'You have <strong>%1$d</strong> product(s) in your shopping cart';
-$lang['cart_is_empty'] = 'The shopping cart is empty';
+/*Form Label Lang*/
+$lang['label_login_info'] = 'Login Information';
 
-/**
- * Factions
-*/
-$lang['alliance'] = 'Alliance';
-$lang['horde'] = 'Horde';
-$lang['neutral'] = 'Neutral';
+/*Input Placeholder Lang*/
+$lang['placeholder_username'] = 'Username';
+$lang['placeholder_email'] = 'Email Address';
+$lang['placeholder_password'] = 'Password';
+$lang['placeholder_re_password'] = 'Repeat Password';
+$lang['placeholder_current_password'] = 'Current Password';
+$lang['placeholder_new_password'] = 'New Password';
+$lang['placeholder_new_username'] = 'New Username';
+$lang['placeholder_confirm_username'] = 'Confirm New Username';
+$lang['placeholder_new_email'] = 'New Email';
+$lang['placeholder_confirm_email'] = 'Confirm New Email';
+$lang['placeholder_create_bug_report'] = 'Create Bug Report';
+$lang['placeholder_title'] = 'Title';
+$lang['placeholder_type'] = 'Type';
+$lang['placeholder_description'] = 'Description';
+$lang['placeholder_url'] = 'URL';
+$lang['placeholder_uri'] = 'Friendly URL (Example: tos)';
+$lang['placeholder_highl'] = 'Highlight';
+$lang['placeholder_lock'] = 'Lock';
+$lang['placeholder_subject'] = 'Subject';
 
-/**
- * Selects
-*/
-$lang['select_type'] = 'Select a type';
-$lang['select_priority'] = 'Select a priority';
-$lang['select_severity'] = 'Select a severity';
-$lang['select_category'] = 'Select a category';
-$lang['select_tag'] = 'Select a tag';
-$lang['select_realm'] = 'Select a realm';
-$lang['select_character'] = 'Select a character';
-$lang['select_item'] = 'Select a item';
-$lang['select_parent'] = 'Select a parent';
-$lang['select_target'] = 'Select a target';
-$lang['select_language'] = 'Select a language';
-$lang['select_expansion'] = 'Select a expansion';
-$lang['select_emulator'] = 'Select a emulator';
-$lang['select_status'] = 'Select a status';
-$lang['select_encryption'] = 'Select a encryption';
-$lang['select_protocol'] = 'Select a protocol';
-$lang['select_option'] = 'Select a option';
-$lang['select_currency'] = 'Select a currency';
-$lang['select_theme'] = 'Select a theme';
-$lang['select_size'] = 'Select a size';
+/*Table header Lang*/
+$lang['table_header_name'] = 'Name';
+$lang['table_header_faction'] = 'Faction';
+$lang['table_header_total_kills'] = 'Total Kills';
+$lang['table_header_today_kills'] = 'Today Kills';
+$lang['table_header_yersterday_kills'] = 'Yesterday Kills';
+$lang['table_header_team_name'] = 'Team Name';
+$lang['table_header_members'] = 'Members';
+$lang['table_header_rating'] = 'Rating';
+$lang['table_header_games'] = 'Games';
+$lang['table_header_id'] = 'ID';
+$lang['table_header_status'] = 'Status';
+$lang['table_header_priority'] = 'Priority';
+$lang['table_header_date'] = 'Date';
+$lang['table_header_author'] = 'Author';
+$lang['table_header_time'] = 'Time';
+$lang['table_header_icon'] = 'Icon';
+$lang['table_header_realm'] = 'Realm';
+$lang['table_header_zone'] = 'Zone';
+$lang['table_header_character'] = 'Character';
+$lang['table_header_price'] = 'Price';
+$lang['table_header_item_name'] = 'Item Name';
+$lang['table_header_items'] = 'Item(s)';
+$lang['table_header_quantity'] = 'Quantity';
 
-$lang['all_types'] = 'All types';
-$lang['all_realms'] = 'All realms';
-$lang['all_characters'] = 'All characters';
-$lang['all_categories'] = 'All categories';
+/*Class Lang*/
+$lang['class_warrior'] = 'Warrior';
+$lang['class_paladin'] = 'Paladin';
+$lang['class_hunter'] = 'Hunter';
+$lang['class_rogue'] = 'Rogue';
+$lang['class_priest'] = 'Priest';
+$lang['class_dk'] = 'Death Knight';
+$lang['class_shamman'] = 'Shamman';
+$lang['class_mage'] = 'Mage';
+$lang['class_warlock'] = 'Warlock';
+$lang['class_monk'] = 'Monk';
+$lang['class_druid'] = 'Druid';
+$lang['class_demonhunter'] = 'Demon Hunter';
 
-/**
- * DateTime
-*/
-$lang['datetime_pattern'] = "MMMM d, y";
-$lang['datetime_full_pattern'] = "MMMM d, y 'at' h:mm a";
+/*Faction Lang*/
+$lang['faction_alliance'] = 'Alliance';
+$lang['faction_horde'] = 'Horde';
 
-/**
- * Alerts
-*/
-$lang['alert_login_failed'] = 'Authentication failed. You have used %1$d of <strong>%2$d</strong> login attempts.';
-$lang['alert_login_attempts_exhausted'] = 'Login attempts exhausted. Try again after <strong>%1$d</strong> minutes.';
-$lang['alert_registration_success'] = 'The account has been created successfully!';
-$lang['alert_registration_pending'] = 'Your account is almost ready! please check your email inbox and look for an email sent by us to validate it.';
-$lang['alert_forgot_success'] = 'An email has been sent to your email address to reset your password.';
-$lang['alert_registration_validated'] = 'The account has been validated and now you can log in.';
-$lang['alert_reset_password'] = 'The account password has been reset and now you can log in.';
-$lang['alert_token_invalid'] = 'The token utilized has expired or is invalid.';
-$lang['alert_password_invalid'] = 'The password is incorrect. please try again!.';
-$lang['alert_nickname_exists'] = 'Nickname is already in use.';
-$lang['alert_username_exists'] = 'Username is already in use.';
-$lang['alert_email_exists'] = 'Email is already in use.';
-$lang['alert_comment_published'] = 'Your comment has been published.';
-$lang['alert_comment_updated'] = 'The comment has been updated.';
-$lang['alert_comment_deleted'] = 'The comment has been deleted.';
-$lang['alert_account_permanently_banned'] = 'Your account is permanently banned.';
-$lang['alert_email_blocked'] = 'The email address used is blocked. Please try to use another.';
+/*Gender Lang*/
+$lang['gender_male'] = 'Male';
+$lang['gender_female'] = 'Female';
 
-/**
- * CMS
-*/
-$lang['cms_updater_not_connected'] = 'Failed to connect to check for updates, please try again later.';
-$lang['cms_updater_version_not_found'] = 'Could not be found a new version available.';
-$lang['cms_updater_failed'] = 'An error occurred while trying to update! See the log file for details.';
-$lang['cms_updater_success'] = 'The CMS has been updated to version <strong>%1$s</strong>.';
-$lang['cms_migration_not_files'] = 'There are no pending migration files to process.';
-$lang['cms_migration_processed'] = 'The migration files have been processed.';
+/*Race Lang*/
+$lang['race_human'] = 'Human';
+$lang['race_orc'] = 'Orc';
+$lang['race_dwarf'] = 'Dwarf';
+$lang['race_night_elf'] = 'Night Elf';
+$lang['race_undead'] = 'Undead';
+$lang['race_tauren'] = 'Tauren';
+$lang['race_gnome'] = 'Gnome';
+$lang['race_troll'] = 'Troll';
+$lang['race_goblin'] = 'Goblin';
+$lang['race_blood_elf'] = 'Blood Elf';
+$lang['race_draenei'] = 'Draenei';
+$lang['race_worgen'] = 'Worgen';
+$lang['race_panda_neutral'] = 'Pandaren Neutral';
+$lang['race_panda_alli'] = 'Pandaren Alliance';
+$lang['race_panda_horde'] = 'Pandaren Horde';
+$lang['race_nightborde'] = 'Nightborne';
+$lang['race_void_elf'] = 'Void Elf';
+$lang['race_lightforged_draenei'] = 'Lightforged Draenei';
+$lang['race_highmountain_tauren'] = 'Highmountain Tauren';
+$lang['race_dark_iron_dwarf'] = 'Dark Iron Dwarf';
+$lang['race_maghar_orc'] = 'Maghar Orc';
+$lang['race_vulpera'] = 'Vulpera';
 
-/**
- * Errors
-*/
-$lang['error_auth_connection'] = 'Could not establish a connection to the auth database';
-$lang['error_characters_connection'] = 'Could not establish a connection to the characters database';
-$lang['error_characters_db_not_found'] = 'Could not find the data to establish a connection with the characters database';
+/*Header Lang*/
+$lang['header_cookie_message'] = 'This website uses cookies to ensure you get the best experience on our website. ';
+$lang['header_cookie_button'] = 'Got it!';
 
-/**
- * Emails
-*/
-$lang['email_account_confirmation'] = 'To confirm the creation of the account associated with this email address, click on the following link:';
-$lang['email_reset_password'] = 'A password reset for the account associated with this email address has been requested. To proceed click on the link:';
-$lang['email_note_time_limit'] = 'The link inside this email is valid for the next <strong>12 hours</strong> from the date of the action. if you have a problem with it please contact our support team.';
+/*Footer Lang*/
+$lang['footer_rights'] = 'All rights reserved.';
 
-/**
- * Exceptions
-*/
-$lang['exception_error_404'] = 'Error 404';
-$lang['exception_page_not_found'] = 'Page not found';
-$lang['exception_page_requested_not_found'] = 'The page you requested could not be found';
-$lang['exception_permission_rejected'] = 'Permission rejected';
-$lang['exception_no_access_permission'] = 'You do not have permission to access this page!';
-$lang['exception_no_action_permission'] = 'You do not have permission to do this action';
-$lang['exception_must_be_logged_in'] = 'You must be logged in to view this page!';
-$lang['exception_already_logged_in'] = 'You have already logged in so you no longer have permission to view this page';
+/*Page 404 Lang*/
+$lang['page_404_title'] = '404 Page not found';
+$lang['page_404_description'] = 'It looks like the page you are looking could not be found';
 
-/**
- * Install
-*/
-$lang['installation'] = 'Installation';
-$lang['install_welcome'] = '<strong>Welcome!</strong> We are glad you are installing BlizzCMS. To begin, the necessary requirements will be checked to proceed with the following steps.';
-$lang['install_requirements_check'] = 'Requirements check';
-$lang['install_php_extensions'] = 'PHP Extensions';
-$lang['install_dependencies'] = 'Dependencies';
-$lang['install_permissions'] = 'Permissions';
-$lang['install_required_version'] = 'Install the minimum required version 7.4.x or newer recommended';
-$lang['install_required_extensions'] = 'Install required PHP extensions';
-$lang['install_missing_extensions'] = 'Install the following missing extensions';
-$lang['install_required_dependencies'] = 'Install required packages through composer (dependency management)';
-$lang['install_missing_composer'] = 'Install <strong>composer</strong>';
-$lang['install_missing_dependencies'] = 'Open a shell to run the following command in the root directory of the site';
-$lang['install_required_permissions'] = 'Set required writable permissions on the folders/files';
-$lang['install_missing_permissions'] = 'Set permission 755 for all folders and permission 644 for all files';
-$lang['install_how_comply_requirement'] = 'How to comply with the requirement?';
-$lang['install_cms_database'] = 'CMS Database';
-$lang['install_auth_database'] = 'Auth/Realmd Database';
-$lang['install_database_note'] = 'Enter the data that will be used to establish the connection to your database.';
-$lang['install_main_settings'] = 'Main settings';
-$lang['install_main_settings_note'] = 'Enter the following main settings needed to use in the installation process.';
-$lang['install_fresh_install'] = 'Fresh install';
-$lang['install_fresh_install_note'] = 'If you choose a <strong>fresh installation</strong>, a new account will be created with the administrator role (the role will only apply to the website).';
-$lang['install_previous_data'] = 'Previous data';
-$lang['install_previous_data_note'] = 'If you choose <strong>previous data</strong>, a copy of the previously created accounts will be made and the administrator role will be granted to the account with the indicated username.';
-$lang['install_previous_data_warning'] = 'Accounts that do not have an email will be created on the website with the following email pattern <strong>username@localhost</strong>, so it is the responsibility of the user to change it.';
-$lang['install_admin_account'] = 'Admin account';
-$lang['install_cms_db_failed'] = 'Has not been possible to establish a connection with the cms database';
-$lang['install_auth_db_failed'] = 'Has not been possible to establish a connection with the auth database';
-$lang['install_change_file_failed'] = 'It was not possible to change the config file. make sure you have the proper permissions for files/folders';
-$lang['install_step_locked'] = 'This step cannot be redone because it was completed';
-$lang['install_find_account_failed'] = 'It was not possible to find an account with the indicated username';
-$lang['install_require_gm_rank'] = 'The account indicated does not have a GM rank equal to or greater than 3';
+/*Panel Lang*/
+$lang['panel_acc_rank'] = 'Account Rank';
+$lang['panel_dp'] = 'Donor Points';
+$lang['panel_vp'] = 'Vote Points';
+$lang['panel_expansion'] = 'Expansion';
+$lang['panel_member'] = 'Member since';
+$lang['panel_chars_list'] = 'Characters List';
+$lang['panel_account_details'] = 'Account Details';
+$lang['panel_last_ip'] = 'Last IP';
+$lang['panel_change_email'] = 'Change Email Address';
+$lang['panel_change_username'] = 'Change Username';
+$lang['panel_change_password'] = 'Change Password';
+$lang['panel_replace_pass_by'] = 'Replace password by';
+$lang['panel_current_username'] = 'Current Username';
+$lang['panel_current_email'] = 'Current Email Address';
+$lang['panel_replace_email_by'] = 'Replace Email by';
+
+/*Home Lang*/
+$lang['home_latest_news'] = 'Latest News';
+$lang['home_discord'] = 'Discord';
+$lang['home_server_status'] = 'Server Status';
+$lang['home_realm_info'] = 'Currently the realm is';
+
+/*PvP Statistics Lang*/
+$lang['statistics_top_20'] = 'TOP 20';
+$lang['statistics_top_2v2'] = 'TOP 2V2';
+$lang['statistics_top_3v3'] = 'TOP 3V3';
+$lang['statistics_top_5v5'] = 'TOP 5V5';
+
+/*News Lang*/
+$lang['news_recent_list'] = 'Recent news list';
+$lang['news_comments'] = 'Comments';
+
+/*Bugtracker Lang*/
+$lang['bugtracker_report_notfound'] = 'Reports not found';
+
+/*Donate Lang*/
+$lang['donate_get'] = 'Get';
+
+/*Vote Lang*/
+$lang['vote_next_time'] = 'Next vote in:';
+
+/*Forum Lang*/
+$lang['forum_posts_count'] = 'Posts';
+$lang['forum_topic_locked'] = 'This topic is locked.';
+$lang['forum_comment_locked'] = 'Have something to say? Log in to join the conversation.';
+$lang['forum_comment_header'] = 'Join the Conversation';
+$lang['forum_not_authorized'] = 'Not Authorized';
+$lang['forum_post_history'] = 'View Post History';
+$lang['forum_topic_list'] = 'Topic List';
+$lang['forum_last_activity'] = 'Latest activity';
+$lang['forum_last_post_by'] = 'Last Post by';
+$lang['forum_whos_online'] = 'Whos Online';
+$lang['forum_replies_count'] = 'Replies';
+$lang['forum_topics_count'] = 'Topics';
+$lang['forum_users_count'] = 'Users';
+
+/*Store Lang*/
+$lang['store_categories'] = 'Store Categories';
+$lang['store_top_items'] = 'TOP Items';
+$lang['store_cart_added'] = 'You have added';
+$lang['store_cart_in_your'] = 'in your shopping cart';
+$lang['store_cart_no_items'] = 'You do not have items in your cart.';
+
+/*Soap Lang*/
+$lang['soap_send_subject'] = 'Store Purchase';
+$lang['soap_send_body'] = 'Thank you for buying in our store!';
+
+/*Email Lang*/
+$lang['email_password_recovery'] = 'Password Recovery';
+$lang['email_account_activation'] = 'Account Activation';
