@@ -19,7 +19,7 @@
                 <thead>
                   <tr>
                     <th class="uk-table-expand"><i class="fas fa-user"></i> <?=$this->lang->line('table_header_name');?></th>
-                    <th class="uk-table-expand uk-text-center"><i class="fas fa-info-circle"></i> <?=$this->lang->line('table_header_level');?></th>
+                    <th class="uk-table-expand uk-text-center"><i class="fas fa-info-circle"></i> 3333<?=$this->lang->line('table_header_level');?></th>
                     <th class="uk-table-expand uk-text-center"><i class="fas fa-user-tag"></i> <?=$this->lang->line('table_header_race');?></th>
                     <th class="uk-table-expand uk-text-center"><i class="fas fa-user-tag"></i> <?=$this->lang->line('table_header_class');?></th>
                     <th class="uk-table-expand uk-text-center"><i class="fas fa-location-arrow"></i> <?=$this->lang->line('table_header_zone');?></th>
