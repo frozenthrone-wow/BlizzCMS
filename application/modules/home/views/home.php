@@ -92,6 +92,7 @@
                     </div>
                     <div class="uk-width-1-2">
                       <div class="uk-tile horde-bar uk-text-center" uk-tooltip="<?= $this->lang->line('faction_horde'); ?>">
+                        <img src="<?= base_url('assets/images/icons/alliance.png'); ?>" width="20"/>
                         <i class="fas fa-users"></i>
                         <?= $this->wowrealm->getCharactersOnlineHorde($multiRealm); ?>
                       </div>
