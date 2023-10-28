@@ -87,14 +87,14 @@
                     <div class="uk-width-1-2">
                       <div class="uk-tile alliance-bar uk-text-center" uk-tooltip="<?= $this->lang->line('faction_alliance'); ?>">
                         <img src="<?= base_url('assets/images/icons/alliance_120x120.png'); ?>" width="40"/>
-                        <i class="fas fa-users"></i>
+                        <!-- <i class="fas fa-users"></i> -->
                         <?= $this->wowrealm->getCharactersOnlineAlliance($multiRealm); ?>
                       </div>
                     </div>
                     <div class="uk-width-1-2">
                       <div class="uk-tile horde-bar uk-text-center" uk-tooltip="<?= $this->lang->line('faction_horde'); ?>">
                         <img src="<?= base_url('assets/images/icons/horde_120x120.png'); ?>" width="40"/>
-                        <i class="fas fa-users"></i>
+                        <!-- <i class="fas fa-users"></i> -->
                         <?= $this->wowrealm->getCharactersOnlineHorde($multiRealm); ?>
                       </div>
                     </div>
