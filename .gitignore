@@ -47,3 +47,4 @@ migration/*
 index.php
 application/config/database.php
 application/config/blizzcms.php
+application/config/database.php
