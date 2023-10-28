@@ -330,7 +330,7 @@ h6,
   box-shadow: 0 15px 10px -15px rgba(0, 0, 0, .6), inset 0 0 5px rgba(0, 0, 0, .4);
   border-image: linear-gradient(to left, rgba(255, 255, 255, .2) 0%, rgba(0, 174, 255, .8) 100%);
   border-image-slice: 1;
-  border-image-width: 1px;
+  border-image-width: 1.5px;
   padding: 15px 20px;
   background: rgba(9, 85, 135, .05);
   color: #ccc;
@@ -627,20 +627,20 @@ h6,
 
 .uk-tile.alliance-bar {
   background: rgb(9,6,60);
-  background: linear-gradient(90deg, rgba(9,6,60,0.08445384989933469) 0%, rgba(15,80,144,1) 23%, rgba(8,149,217,1) 89%);
+  background: linear-gradient(90deg, rgba(9,6,60,0.01) 0%, rgba(15,80,144,0.4) 30%, rgba(8,149,217,1) 69%);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #fff;
   font-size: 1.2rem;
-  padding: 5px 10px;
+  padding: 8px 0px 8px 8px;
 }
 
 .uk-tile.horde-bar {
   background: rgb(9,6,60);
-  background: linear-gradient(-90deg, rgba(9,6,60,0.08445384989933469) 0%, rgba(144,15,15,1) 23%, rgba(217,8,8,1) 89%);
+  background: linear-gradient(-90deg, rgba(9,6,60,0.01) 0%, rgba(144,15,15,0.4) 30%, rgba(217,8,8,1) 69%);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #fff;
   font-size: 1.2rem;
-  padding: 5px 10px;
+  padding: 8px 8px 8px 0px;
 }
 
 .uk-nav-default.myaccount-nav {
