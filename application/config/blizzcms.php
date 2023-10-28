@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *  Write the name of your website this will appear by default.
  *
 */
-$config['website_name'] = '';
+$config['website_name'] = 'Frozen Throne';
 
 /**
  *
@@ -35,7 +35,7 @@ $config['maintenance_mode'] = '0';
  *  Write the invitation of your discord channel.
  *
 */
-$config['discord_invitation'] = '';
+$config['discord_invitation'] = 'xPf6BF8dKG';
 
 /**
  *
@@ -44,7 +44,7 @@ $config['discord_invitation'] = '';
  *  Write the realmlist used on your server to publish it on the website.
  *
 */
-$config['realmlist'] = '';
+$config['realmlist'] = '188.212.101.142';
 
 /**
  *  Bnet enabled?
@@ -52,7 +52,7 @@ $config['realmlist'] = '';
  *  true for Emulators BattleNet.
  *  false for not bnetserver
  */
-$config['bnet_enabled'] = true;
+$config['bnet_enabled'] = false;
 
  /**
  *  Emulator
@@ -63,7 +63,7 @@ $config['bnet_enabled'] = true;
  *  hex = For emulators Mangos  (HEX6 Compatibility)
  *
  */
-$config['emulator'] = 'srp6';
+$config['emulator'] = 'default';
 
 /**
  *
@@ -82,7 +82,7 @@ $config['emulator'] = 'srp6';
  *  9 = Shadowlands
  *
 */
-$config['expansion'] = '1';
+$config['expansion'] = '3';
 
 /**
  *
@@ -192,7 +192,7 @@ $config['mod_access_level'] = '2';
  *  Warning: Don't change this configuration.
  *
 */
-$config['migrate_status'] = '1';
+$config['migrate_status'] = '0';
 
 /**
  *
