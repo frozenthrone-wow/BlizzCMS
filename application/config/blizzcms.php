@@ -63,7 +63,7 @@ $config['bnet_enabled'] = false;
  *  hex = For emulators Mangos  (HEX6 Compatibility)
  *
  */
-$config['emulator'] = 'default';
+$config['emulator'] = 'srp6';
 
 /**
  *
